@@ -52,7 +52,7 @@ class EvaluationManager:
 
     def __enter__(self):
         self.prev = torch.is_grad_enabled()
-        torch._C.set_grad_enabled(False)
+         #torch._C.set_grad_enabled(False)
         for net in self.nets:
             net.eval()
 
